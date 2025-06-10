@@ -129,3 +129,17 @@ header{
 p{
   padding-top: 20px;
 }
+
+#user-status {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 14px;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
