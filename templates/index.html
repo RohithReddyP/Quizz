@@ -6,9 +6,21 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+  <!-- ✅ Top-right user status -->
+  <div id="user-status">
+    {% if session.get('user') %}
+      Welcome, {{ session['user'] }} |
+      <a href="{{ url_for('logout') }}">Logout</a>
+    {% else %}
+      <a href="{{ url_for('login') }}">Login</a> |
+      <a href="{{ url_for('register') }}">Register</a>
+    {% endif %}
+  </div>
+
   <header>
     <h1>Quiz Game</h1>
   </header>
+
   <div id="category-select">
     <h2>Select Category</h2>
     <div id="categories"></div>
@@ -29,7 +41,8 @@
 
   <script src="{{ url_for('static', filename='script.js') }}"></script>
   <footer>
-    <center><p>All Rights Reserved!..Dev: Rohith Reddy P</p>
+    <center>
+      <p>All Rights Reserved!.. Dev: Rohith Reddy P</p>
     </center>
   </footer>
 </body>
