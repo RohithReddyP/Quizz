@@ -1,0 +1,7 @@
+install 
+:
+'pip install flask'-->run in cmd
+
+
+In terminal run "python app.py"(choose respective path)
+then continue.....

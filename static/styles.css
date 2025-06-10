@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(248, 199, 255);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#category-select, #quiz-container, #result {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+#categories button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#categories button:hover {
+  background-color: #0056b3;
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+}
+
+#options button.option {
+  margin: 6px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#options button.option:hover:enabled {
+  background-color: #e6f0ff;
+}
+
+#options button.option:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+#next-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#next-btn:disabled {
+  background-color: #a1d9a1;
+  cursor: default;
+}
+
+#next-btn:hover:enabled {
+  background-color: #218838;
+}
+
+#score {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#restart-btn {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+#restart-btn:hover {
+  background-color: #0056b3;
+}
+
+footer{
+  margin-top: 27%;
+  background-color: #333;
+  color: white;
+  height: 50px;
+  border-radius: 7px;
+  font-family: Brush Script MT;
+}
+
+header{
+  background-color: #333;
+  color: white;
+  height: 50px;
+  border-radius: 7px;
+}
+
+p{
+  padding-top: 20px;
+}

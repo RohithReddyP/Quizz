@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Quiz Game</h1>
+  </header>
+  <div id="category-select">
+    <h2>Select Category</h2>
+    <div id="categories"></div>
+  </div>
+
+  <div id="quiz-container" style="display:none;">
+    <div id="question"></div>
+    <div id="options"></div>
+    <button id="next-btn" disabled>Next Question</button>
+    <div id="score"></div>
+  </div>
+
+  <div id="result" style="display:none;">
+    <h2>Quiz Completed!</h2>
+    <p id="final-score"></p>
+    <button id="restart-btn">Play Again</button>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <footer>
+    <center><p>All Rights Reserved!..Dev: Rohith Reddy P</p>
+    </center>
+  </footer>
+</body>
+</html>
