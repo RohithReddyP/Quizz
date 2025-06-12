@@ -163,7 +163,7 @@ p{
 
 /* Input fields */
 .auth-container input {
-  width: 100%;
+  width: 95%;
   padding: 10px 12px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
